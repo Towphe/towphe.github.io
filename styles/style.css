@@ -1,0 +1,222 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #ede9e8;
+    color: rgb(44, 44, 44);
+}
+
+span, a, p{
+    font-size: 1.15em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-container{
+    width: 100vw;
+}
+
+header{
+    background-color: #A2967F;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+nav{
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    gap: 0.6em;
+}
+
+.nav-elem{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#header-logo{
+    display: block;
+    max-height: 70%;
+    align-self: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 2em;
+    background-color: #F5F4EF;
+    color: #53524E;
+}
+
+.content-container{
+}
+
+#featured{
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.featured-text{
+    font-size: 2em;
+    width: 12ch;
+}
+
+#featured-photo{
+    height: 15em;
+    border-radius: 5em;
+}
+
+#projects{
+    height: auto;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    background-color: #53524E;
+    color: #F5F4EF;
+    padding-bottom: 3em;
+}
+
+.project-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.5em;
+}
+
+.project-entry{
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.project-entry-img{
+    display: block;
+    height: 80%;
+}
+
+.project-entry-details{
+    display: block;
+}
+
+.project-title{
+    font-weight: 700;
+}
+
+.project-desc{
+    width: 40ch;
+}
+
+.project-tech{
+    font-style: italic;
+    width: 40ch;
+}
+
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+}
+
+.skills-entry{
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.skill-entry-name{
+    text-align: center;
+}
+
+.skills-entry-img{
+    height: 80%;
+}
+
+.bio-text{
+    text-align: justify;
+}
+
+footer{
+    background-color: #CEC3B2;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#autobiography{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#footer-logo{
+    display: block;
+    max-height: 65%;
+}
+
+.footer-details{
+    display: block;
+}
+
+
+@media only screen and (min-width: 720px){
+    nav{
+        gap: 3em    
+    }
+    #featured{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        gap: 3em
+    }
+    #skills-autobiog-wrapper{
+        margin-top: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #skills{
+        width: 50vw;
+    }
+    .skills-entry-img{
+        height: 50%;
+    }
+    #autobiography{
+        width: 35ch;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    nav{
+        gap: 6em    
+    }
+    #autobiography{
+        width: 70ch;
+    }
+}
